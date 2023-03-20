@@ -207,9 +207,10 @@ main {
 
 .footer {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    height: 60px;
+    justify-content: center;
+    height: 70px;
     background-color: #9B51E0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
