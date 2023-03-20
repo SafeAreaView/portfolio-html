@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeAreaView</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="wrapper">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="header">
+        <nav>
+            <ul class="header__links-list ">
+                <li><a class="header_link" href="#about">About Me</a></li>
+                <li><a class="header_link" href="#skills">Skills</a></li>
+                <li><a class="header_link" href="#works">Works</a></li>
+                <li><a class="header_link" href="#languages">Languages</a></li>
+                <li><a class="header_link" href="#contact">Contacts</a></li>
+                <li><a class="header_link" href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="presentation">
+            <div>
+                <h1><span class="gray">Maksym Cherniavskyi</span><br>
+                    <span class="colored">Front-End Developer</span>
+                </h1>
+            </div>
+            <img class="photo" src="./assets/img/portfoliophoto.png" alt="Maksym Cherniavsky Photo">
+            <a class="btn" href="./assets/CV-MaksymCherniavskyi.pdf" download="CV-MaksymCherniavskyi.pdf">Download
+                Resume</a>
+        </div>
+        <section class="section">
+            <div class="section-title">
+                <h2 id="about" class="title">About Me</h2>
+            </div>
+            <p class="subtitle">I live in a beautiful port city called Odessa. <br> I realized that I like web
+                development
+                and
+                began to work in this direction.
+                <br>
+                Ready to take your test <br>
+                There is a desire and time to learn new technologies <br>
+                Telegram for communication <a href="https://t.me/SafeAreaView">https://t.me/SafeAreaView</a>
+            </p>
+        </section>
+        <section class="section skills">
+            <div class="section-title">
+                <h2 id="skills" class="title">Skills</h2>
+            </div>
+            <div>
+                <ul>
+                    <li>HTML5/Pug</li>
+                    <li>CSS/SASS</li>
+                    <li>Crossbrowsing/RWD</li>
+                    <li>Bootstrap</li>
+                    <li>JS</li>
+                    <li>Git/Github/Gitlab</li>
+                    <li>Figma/Adobe Software for Developing</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-title">
+                <h2 id="works" class="title">Works</h2>
+            </div>
+            <div class="works">
+                <h3>Cosmetics</h3>
+                <a href="https://github.com/SafeAreaView/cosmetics"><img src="./assets/img/cosmetics-preview.png"
+                        width="500" alt="cosmetics preview image"></a>
+                <p class="subtitle">Little SASS practice</p>
+
+
+                <h3>PC-assembly</h3>
+                <a href="https://github.com/SafeAreaView/PC-assembly"><img src="./assets/img/pc-assembly-preview.png"
+                        width="500" alt="PC-assembly preview image"></a>
+                <p class="subtitle">Simple one screen site with working progressbar and timer <br>
+                    Technology: HTML CSS JS</p>
+
+                <h3>Student club of my university</h3>
+                <a href="https://github.com/SafeAreaView/student-club">
+                    <img src="./assets/img/student-preview.png" width="500" alt="student-club preview image"></a>
+                <p class="subtitle">was made as part of the spring practice (the design is not mine)
+                    <br>
+                    Technology: HTML CSS JS +Bootstrap
+                </p>
+
+                <h3>solar.exe
+                </h3>
+                <a href="https://github.com/SafeAreaView/solar.exe"><img src="./assets/img/solar-preview.png"
+                        width="500" alt="solar.exe preview image"></a>
+                <p class="subtitle">
+                    Technologies: HTML CSS JS
+                </p>
+                <h2>Code example</h2>
+                <pre>
+                    <code>
+                import "./App.css";
+                import Header from "./components/Header";
+                import Navigation from "./components/Navigation";
+                import Profile from "./components/Profile";
+                function App() {
+                    return (
+                        &lt;div className="app-wrapper"&gt;
+                        &lt;Header /&gt;
+                        &lt;Navigation /&gt;
+                        &lt;Profile /&gt;
+                        &lt;/div&gt;
+                        );
+                    }
+                    export default App;</code></pre>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-title">
+                <h2 id="languages" class="title">Languages</h2>
+            </div>
+            <p class="subtitle">English - B1</p>
+
+            <p class="subtitle">Ukrainian - Native</p>
+
+            <p class="subtitle">Russian - C1</p>
+
+        </section>
+        <section class="section contacts">
+            <div class="section-title">
+                <h2 id="contact" class="title">Contacts</h2>
+            </div>
+            <ul class="subtitle">
+                <li><a href="mailto:SafeAreaView@gmail.com">Gmail - SafeAreaView@gmail.com</a></li>
+                <li><a href="https://t.me/SafeAreaView">Telegram - @SafeAreaView</a></li>
+                <li><a href="https://www.linkedin.com/in/max-cherniavsky-958758208/">LinkedIn - Max Cherniavsky</a>
+                </li>
+                <li><a href="https://github.com/SafeAreaView">Github - @SafeAreaView</a></li>
+            </ul>
+        </section>
+        <section class="section">
+            <div class="section-title">
+                <h2 id="education" class="title">Education</h2>
+            </div>
+            <p class="subtitle">
+                Odessa National University of Technologies <br>
+                2019 - 2023 Bachelor of Computer Science
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <p>2022</p>
+        </div>
+        <div>
+            <span>Designed by @eeyykktt <br>
+                Developed by <a href="https://github.com/SafeAreaView">@SafeAreaView</a></span>
+        </div>
+        <a href="https://rs.school/js-stage0/"><img src="./assets/icons/rs-logo.png" width="120"
+                alt="Rs-school logo"></a>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
